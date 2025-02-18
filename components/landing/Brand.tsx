@@ -3,26 +3,25 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Leaf, Heart, Zap } from "lucide-react"
-import { Store } from "@/constants/store"
 
 const brandValues = [
   {
     icon: Leaf,
     title: "Сталий розвиток",
     description:
-      "Ми прагнемо мінімізувати наш вплив на навколишнє середовище, використовуючи екологічно чисті матеріали та етичні методи виробництва.",
+      "Ми використовуємо екологічно чисті матеріали та етичні методи виробництва, щоб мінімізувати вплив на довкілля.",
   },
   {
     icon: Heart,
     title: "Якість і комфорт",
     description:
-      "Кожен наш виріб створений з любов'ю до деталей, забезпечуючи неперевершену якість та комфорт для наших клієнтів.",
+      "Наші вироби створені з увагою до деталей, забезпечуючи неперевершену якість та комфорт у повсякденному житті.",
   },
   {
     icon: Zap,
-    title: "Інновації в дизайні",
+    title: "Інноваційний підхід",
     description:
-      "Ми постійно шукаємо нові способи поєднати традиційну скандинавську естетику з сучасними тенденціями моди.",
+      "Ми поєднуємо сучасний дизайн із функціональністю, створюючи стильні та практичні рішення для вашого гардеробу.",
   },
 ]
 
@@ -45,7 +44,7 @@ export default function Brand() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Наш Бренд
+          Наші принципи
         </motion.h2>
         <motion.p
           className="text-body-medium text-neutral-600 text-center max-w-2xl mx-auto mb-16"
@@ -53,8 +52,7 @@ export default function Brand() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          {Store.name} - це більше, ніж просто одяг. Це філософія життя, що поєднує в собі скандинавську простоту,
-          функціональність та елегантність.
+          Ми створюємо більше, ніж просто одяг — це стиль життя, що поєднує естетику, комфорт та відповідальний підхід.
         </motion.p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {brandValues.map((value, index) => (
@@ -77,4 +75,3 @@ export default function Brand() {
     </motion.section>
   )
 }
-

@@ -16,7 +16,7 @@ export default function BannerHero() {
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent">
         <div className="container mx-auto h-full flex items-center">
           <div className="max-w-2xl space-y-8">
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight">
+            <h1 className="font-bold text-white max-[1380px]:text-[72px] max-[1380px]:leading-[81px] max-[1260px]:text-[64px] max-[1260px]:leading-[72px] max-[1130px]:text-[60px] max-[1130px]:leading-[67px] max-[1070px]:text-[56px] max-[1070px]:leading-[63px] max-[360px]:text-[50px] max-[360px]:leading-[55px]">
               Timeless
               <br />
               <span className="text-neutral-300">Style & Elegance</span>
@@ -24,7 +24,7 @@ export default function BannerHero() {
             <p className="text-xl md:text-2xl text-neutral-300 max-w-xl">
               Discover a collection designed for those who appreciate quality, sophistication, and modern aesthetics.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex gap-4 max-[465px]:flex-col">
               <Button size="lg" className="bg-white text-black rounded-none hover:bg-neutral-200 px-8 py-6 text-lg">
                 Shop Now
               </Button>
