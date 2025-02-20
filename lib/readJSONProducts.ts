@@ -22,7 +22,7 @@ interface JSONProduct {
   export function convertJsonToProducts(pathToFile?: string): JSONProduct[] {
     try {
       console.log("Reading file")
-      let jsonFilePath = "C:\\Users\\Користувач\\Downloads\\products1.json";
+      let jsonFilePath = "C:\\Users\\Користувач\\Downloads\\products3.json";
     
       // Ensure the file exists before reading
       if (!fs.existsSync(jsonFilePath)) {
